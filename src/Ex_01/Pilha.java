@@ -1,4 +1,4 @@
-package Ex_05;
+package Ex_01;
 
 public interface Pilha <T>{
     void empilhar(T item);
