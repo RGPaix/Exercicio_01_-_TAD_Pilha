@@ -1,4 +1,4 @@
-package Ex_05;
+package Ex_01;
 
 import java.util.NoSuchElementException;
 
@@ -22,16 +22,14 @@ public class PilhaVetor<T> implements Pilha<T> {
             System.out.println("Pilha cheia.");
             return;
         }
-        System.out.println("Última ação: " + item);
         dados[top++] = item;
     }
 
     @Override
-    public T desfazer() {
+    public T desempilhar() {
         if (vazia()) throw new NoSuchElementException("Pilha vazia.");
         T item = (T) dados[top - 1];
         --top;
-        System.out.println("Ação " + item + " desfeita");
         return item;
     }
 
