@@ -1,4 +1,9 @@
-package Ex_041;
+package Ex_04;
 
-public interface Pilha {
+public interface Pilha<T>{
+    void empilhar(T item);
+    T desempilhar();
+    T topo();
+    Boolean vazia();
+    Integer tamanho();
 }
